@@ -46,7 +46,8 @@ To change this template use Tools | Templates.
             color:black;
         }
         .navbar ul li a:hover {
-            color:grey;
+            background-color: grey;
+            color:white;
         }
         #loading-gif {
             margin:auto;
@@ -80,6 +81,10 @@ To change this template use Tools | Templates.
             font-style:italic;
             text-decoration:underline;
         }
+        h3.aboutme-headers {
+            border-top: 3px dashed orange;
+            width:75%
+        }
         .list-items {
             list-style: circle;
         }
@@ -92,6 +97,16 @@ To change this template use Tools | Templates.
             float:left;
             margin-right:30px;
             border: 2px solid orange
+        }
+        #aboutme-list #sidebar {
+            float:right;
+            text-align:right;
+            color:white;
+            background-color:orange;
+            border:3px dotted white;
+            position:fixed;
+            left:1100px;
+            top: 180px
         }
     </style>
 </head>
@@ -113,9 +128,28 @@ To change this template use Tools | Templates.
             <br>
             <br>
 
-            <h2 class="subject-header"> 
+            <div id="aboutme-list">
+
+
+                <ul id="sidebar">
+                    <li><a href="#uno">| Who is Nolan? | </a>
+                    </li>
+                    <li><a href="#dos ">| Favorite Books | </a>
+                    </li>
+                    <li><a href="#tres ">| Hobbies | </a>
+                    </li>
+                    <li><a href="#cuatros">| Fun Facts | </a> 
+                    </li>
+
+                </ul>
+            </div>
+            <div id="uno">
+
+
+                <h2 class="subject-header uno"> 
            Who is Nolan?
             </h2>
+            </div>
 
 
 
@@ -142,8 +176,10 @@ To change this template use Tools | Templates.
 
             <p class="paragraph">In my life I've been to many places, from the cold climate of Calgary, Alberta, to the warm and humid climate of Orlando, Florida, I've seen it all.</p>
 
-            <h3 class="aboutme-headers"> What are your 2 favorite books? </h3>
+            <div id="dos">
 
+                <h3 class="aboutme-headers"> What are your 2 favorite books? </h3>
+            </div>
             <p class="paragraph">My two favorite books are "The Boys in the Boat" and "I am the Messenger"</p>
 
             <h4 class="aboutme-headers">
@@ -161,10 +197,13 @@ To change this template use Tools | Templates.
             <br>
             <br>
 
-            <h3 class="aboutme-headers">
+            <div id="tres">
+
+                <h3 class="aboutme-headers">
              What is your favorite hobby?
             </h3>
-            <img src="http://www.gbsrc.com/picts/PICS/Tennis_Racket_and_Balls.jpg" class="aboutme-pictures">
+            </div>
+            <img src="http://www.gbsrc.com/picts/PICS/Tennis_Racket_and_Balls.jpg" class="aboutme-pictures" alt="a picture of a tennis racket and a tennis ball">
             <p class="paragraph">Outside of school, I enjoy playing sports such as cross country and tennis.</p>
 
             <br>
@@ -175,27 +214,31 @@ To change this template use Tools | Templates.
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Why do you like it?
             </h4>
 
-            <p class="paragraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sports give me an oppurtunity to blow off some extra energy and also to keep me in shape!</p>
+            <p class="paragraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sports give me an opportunity to blow off some extra energy and also to keep me in shape!</p>
 
             <h4 class="aboutme-headers">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How did you get into it?
             </h4>
 
-            <p class="paragraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; As a kid I was exposed to sports everyday, my family is very active and I ended watching and playing many
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sports.</p>
+            <p class="paragraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; As a kid I was exposed to sports everyday, my family is very active and I ended watching and playing
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;many sports.
+            </p>
 
             <h4 class="aboutme-headers">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What is your favorite part?
             </h4>
 
-            <p class="paragraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; My favorite part is that after a match or run, win or loss, I know that I tried my hardest and that my hardwork
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; payed off.
+            <p class="paragraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; My favorite part is that after a match or run, win or loss, I know that I tried my hardest and that my
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hardwork payed off.
             </p>
-            <h3 class="aboutme-headers">
-              What else do you want people to know about you?
+            <div id="cuatros">
+
+                <h3 class="aboutme-headers">
+              (Fun Fact) What else do you want people to know about you ?
             </h3>
-            <img src="http://www.hamiltonvetcare.com.au/Portals/Hamiltonvetcare/Easter%20chocolate.jpg" class="aboutme-pictures">
-            <p class="paragraph">I don't like chocolate.</p>
+            </div>
+            <img src="http://www.hamiltonvetcare.com.au/Portals/Hamiltonvetcare/Easter%20chocolate.jpg" class="aboutme-pictures" alt="a picture showing that I don't like chocolate">
+            <p class="paragraph">I don't like chocolate. It's quite a long story, but to sum it up, when I was young, around 3 or 4, to get all the chocolate that my parents gave us, she lied to me and told me I was "allergic" to chocolate. To this day, I still give her all the chocolate, not because I think that I'm allergic to it, but because after not eating for so long, I simply don't like it!</p>
 
 
 
