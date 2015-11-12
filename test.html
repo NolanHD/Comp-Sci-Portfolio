@@ -1,0 +1,186 @@
+<!--
+To change this template use Tools | Templates.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-Hello-->
+    <title>Nolan's Website</title>
+    <style>
+        #title {
+            font-style:underline;
+            text-align:center;
+            border: 5px solid rgb(255, 165, 0);
+            font-family:Century Gothic;
+        }
+        body {
+            color:rgb(255, 255, 255);
+            background: rgb(20, 20, 20);
+        }
+        .navbar {
+            height:40px;
+            background:white;
+            margin-top: 25px;
+            border-bottom:10px solid orange;
+        }
+        #header {
+            width:1000px;
+            height:auto;
+            margin:0 auto;
+        }
+       
+        #loading-gif {
+            margin:auto;
+            float:right;
+            width:25%;
+        }
+        #header-border {
+            width:100%;
+            height:0px;
+            border-bottom: 2px solid orange;
+        }
+        .subject-header {
+            color:orange;
+            text-decoration:underline;
+        }
+        .paragraph {
+            width:70%;
+        }
+        #word-all {
+            font-weight:bold;
+        }
+        #overview-list {
+            font-weight:bold;
+        }
+        #nav {
+    background-color:white;
+}
+#nav_wrapper {
+    width: 960px;
+    margin: 0 auto;
+    text-align: left;
+}
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    min-width: 200px;
+}
+#nav ul li {
+    display: inline-block;
+}
+#nav ul li:hover {
+    background-color: grey;
+    color:white;
+}
+#nav ul li a, visited {
+    color: black;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+#nav ul li:hover ul {
+    display: block;
+}
+#nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    border: 5px solid orange
+    border-top: 0;
+    margin-left: -5px;
+}
+#nav ul ul li {
+    display: block;
+}
+#nav ul ul li a:hover {
+    color: white;
+}
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="title"> Welcome to Computer Science </h1>
+        <div class="navbar">
+            
+
+
+<div id="nav">
+    <div id="nav_wrapper">
+        <ul>
+            <li><a href="#">Home</a>
+            </li>
+            <li> <a href="#">HTML/CSS</a>
+            </li>
+            <li> <a href="#">About Me</a>
+
+                <ul>
+                    <li><a href="#">Who is Nolan?</a>
+                    </li>
+                    <li><a href="#">Favorite Books</a>
+                    </li>
+                    <li><a href="#">Hobbies</a>
+                    </li>
+                </ul>
+            </li>
+            <li> <a href="#">Hardware</a>
+
+                <ul>
+                    <li><a href="#">dropdown #2 item #1</a>
+                    </li>
+                    <li><a href="#">dropdown #2 item #2</a>
+                    </li>
+                    <li><a href="#">dropdown #2 item #3</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+    <!-- Nav wrapper end -->
+</div>
+<!-- Nav end -->
+            <br>
+            <br>
+
+            <h2 class="subject-header"> 
+            Introduction to Computer Science
+            </h2>
+            <img src="http://i.imgur.com/vHJ0lpg.gif" id="loading-gif">
+            <p class="paragraph">
+                Welcome to Computer Science! Computer Science is a class where people of all levels of experience come to learn or expand their knowledge of computers. From coding to building computers, we do it <span id="word-all"> all! </span>
+            </p>
+
+
+            <h2 class="subject-header"> Main Purpose </h2>
+            <p class="paragraph">In this class we are learning how to use the coding language called HTML and CSS. Along with that, there will be an introduction to the components of a computer and how one is built. We will also delve into how the Linux OS works and how our knowledge of HTML and CSS can apply to it. Hopefully by the end of this interval, everyone will have a completed website using the basic knowledged we have been taught.
+            </p>
+            <h2 class="subject-header">
+              Webpage Overview
+            </h2>
+            <p class="paragraph">
+                <ul>
+                    <li> <span id="overview-list">About Me</span> - Go here to learn more about me, Nolan!</li>
+                    <li>
+                        <span id="overview-list">HTML/CSS</span> - Go here to learn more about HTML/CSS!
+                    </li>
+                    <li>
+                        <span id="overview-list">Computer Hardware</span> - Go here to learn about Computer Hardware
+                    </li>
+
+
+                </ul>
+        </div>
+
+    </div>
+    <div id="header-border">
+    </div>
+
+</body>
+
+
+</html>
