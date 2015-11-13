@@ -8,6 +8,11 @@ var todo = document.getElementById('todolist'),
     
 form.addEventListener( 'submit', function(evt) {
   var text = field.value;
+//  In this function when a dropdown value is chosen
+//  the text when you click submit is given a styling.
+//  The styling only applies to that text because the styling
+//  is unique because it is in each if statement and doesn't
+//  effect the whole list.
   
   if (dropdown.value == "underline"){
     todo.innerHTML += '<div style= "text-decoration: underline;">' + text + '</div>';

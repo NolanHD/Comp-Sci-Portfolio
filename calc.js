@@ -8,6 +8,11 @@ var dropdown = document.getElementById("dropdown");
 button.addEventListener("click", doMath);
 
 function doMath() {
+    
+//   In this function when a dropdown value is chosen
+//   the code within the if statement is executed
+//   resulting in different function on the calculator.
+    
     if  (dropdown.value == "+"){
         answer = parseInt(input1.value) + parseInt(input2.value);
         display.innerHTML = answer;

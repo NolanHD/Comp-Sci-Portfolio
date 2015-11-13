@@ -8,6 +8,8 @@ var sportsinfo1 = document.getElementById("sportsinfo1");
 var sportsinfo2 = document.getElementById("sportsinfo2");
 var sportsinfo3 = document.getElementById("sportsinfo3");
 
+// When the item is clicked it executes the code which changes
+// the inner html which shows a message at the bottom of the page.
 item1.addEventListener("click", function(){
     
     sportsinfo1.innerHTML = "Soccer <br>- Soccer is played in two 45 minute halves.";
