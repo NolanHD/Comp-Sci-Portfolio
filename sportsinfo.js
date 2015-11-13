@@ -15,13 +15,13 @@ item1.addEventListener("click", function(){
     sportsinfo1.innerHTML = "Soccer <br>- Soccer is played in two 45 minute halves.";
     sportsinfo2.innerHTML = "- Soccer is the most played sport in the world.";
     sportsinfo3.innerHTML = "- There are 11 players on each team.";
-});
+})
                        
 item2.addEventListener("click", function(){
     
     sportsinfo1.innerHTML = "Football <br> - American Football grew out of English sports such as rugby and soccer and became popular on American college campuses in the late 1800s.";
-    sportsinfo2.innerHTML = "- The most watched television event in the United States is the Super Bowl";
-    sportsinfo3.innerHTML = "- It takes about 600 cows to make one full season's worth of NFL footballs";
+    sportsinfo2.innerHTML = "- The most watched television event in the United States is the Super Bowl.";
+    sportsinfo3.innerHTML = "- It takes about 600 cows to make one full season's worth of NFL footballs.";
 });
 
 item3.addEventListener("click", function(){
