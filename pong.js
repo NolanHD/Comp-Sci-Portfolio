@@ -137,10 +137,10 @@ document.addEventListener("keydown", function(evt) {
 	if (evt.keyCode === 87) {
 		leftPad.goDown = true;
 	}
-	if (evt.keyCode === 40) {
+	if (evt.keyCode === 76) {
 		rightPad.goUp = true;
 	}
-	if (evt.keyCode === 38) {
+	if (evt.keyCode === 79) {
 		rightPad.goDown = true;
 	}
 });
@@ -154,10 +154,10 @@ document.addEventListener("keyup", function(evt) {
 		leftPad.goDown = false;
 	}
 
-	if (evt.keyCode === 40) {
+	if (evt.keyCode === 76) {
 		rightPad.goUp = false;
 	}
-	if (evt.keyCode === 38) {
+	if (evt.keyCode === 79) {
 		rightPad.goDown = false;
 	}
 });
