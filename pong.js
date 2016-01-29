@@ -51,6 +51,10 @@ var ball = {
 			this.yPos = 200;
 			this.dx = -ball.initDx;
 			this.dy = -ball.initDy;
+			this.dx = ball.initDx;
+			this.dy = ball.initDy;
+			this.dx = -ball.initDx;
+			this.dy = ball.initDy;
 		}
 // this piece of code pretty much says that when the x.Pos matches with the rightPad.Xpos AND the y.Pos of the ball and the rightPad.yPos the ball will reverse and the speed will increase by a factor of -1.1.
 		if (this.xPos >= rightPad.xPos && this.yPos >= rightPad.yPos && this.yPos <= rightPad.yPos + 80) {
