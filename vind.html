@@ -1,0 +1,352 @@
+<!--
+To change this template use Tools | Templates.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <!-Hello-->
+    <title>Nolan's Website</title>
+    <style>
+        #title {
+            font-style:underline;
+            text-align:center;
+            border: 5px solid rgb(255, 165, 0);
+            font-family:Century Gothic;
+        }
+        body {
+            color:rgb(255, 255, 255);
+            background: rgb(20, 20, 20);
+        }
+        .navbar {
+            height:40px;
+            background:white;
+            margin-top: 25px;
+            border-bottom:10px solid orange;
+         
+        }
+        #header {
+            width:1000px;
+            height:auto;
+            margin:0 auto;
+        }
+        .navbar ul {
+            margin:0;
+            padding:0;
+            font-family:Century Gothic;
+            font-size:5;
+        }
+        .navbar ul li {
+            list-style:none;
+            
+        }
+        .navbar ul li a {
+            text-decoration:none;
+            float: left;
+            display: block;
+            padding: 10px 20px;
+            color:black;
+            
+        }
+        .navbar ul li a:hover {
+            background-color: grey;
+            color:white;
+        }
+        .navbar ul li a:hover ul {
+            display:block;
+        }
+        .navbar ul ul {
+            display:none;
+            position:absolute;
+        }
+        #loading-gif {
+            margin:auto;
+            float:right;
+            width:25%;
+        }
+        #header-border {
+            width:100%;
+            height:0px;
+            border-bottom: 2px solid orange;
+        }
+        .subject-header {
+            color:orange;
+            text-decoration:underline;
+            text-align:left;
+        }
+        .paragraph {
+            width:70%;
+        }
+        #word-all {
+            font-weight:bold;
+        }
+        #overview-list {
+            font-weight:bold;
+        }
+        .code {
+            
+            background-color:white;
+            color: black;
+        }
+        .codeDiv{
+            border-bottom:1px solid orange;
+            border-top:1px solid orange;
+            font:monospace;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="title"> Welcome to Computer Science </h1>
+        <div class="navbar">
+
+
+
+            <ul>
+                <li><a href="index.html "> Home  </a>
+                </li>
+                <li><a href="AboutMe.html"> About Me </a>
+                </li>
+                <ul>
+                    <li><a href="#">dropdown #1</a>
+                    </li>
+                    <li><a href="#">dropdown #1</a>
+                    </li>
+                    <li><a href="#">dropdown #1</a>
+                    </li>
+                </ul>
+                <li><a href="HTML-CSS.html"> HTML/CSS  </a>
+                </li>
+                <li><a href="Computer-Hardware.html"> Computer Hardware  </a> 
+                </li>
+                <li><a href="sportsinfo.html"> Sports Info  </a> 
+                </li>
+                <li><a href="calc.html"> Calculator  </a> 
+                </li>
+                <li><a href="todolist.html"> To Do List  </a> 
+                </li>
+                <li><a href="myCanvas.html"> Pong | </a> 
+                </li>
+                <li><a href="vind.html"> Vindinium  </a> 
+                </li>
+
+
+
+            </ul>
+            <br>
+            <br>
+
+            <h2 class="subject-header"> 
+            What is Vindinium?
+            </h2>
+            <img src="http://i.imgur.com/vHJ0lpg.gif" id="loading-gif" alt="cool gif">
+            <p class="paragraph">
+               Vindinium is an Artificial Intelligence programming challenge. You have to take the control of a legendary hero 
+               using the programming language of your choice. You will fight with other AI for a predetermined number of turns a
+               nd the hero with the greatest amount of gold will win. There are three main objectives that are needed to win. 
+               The first one is claiming mines. When mines are claimed you get a set amount of gold per turn when holding on to them.
+               You can kill other players by standing next to them and claim all of their current claimed mines. When you claim mines 
+               because they are defended by goblins, it takes some of your health. To go heal, you can go to taverns located around the map
+               and heal 70 health a turn. Healing costs gold also and its not smart to always stand next to a tavern because
+               you need the most gold to win after all! There are 1200 turns per game and your code is run each turn. To decide what 
+               you will do. This is a basic form of AI and that is what we're trying to take away from this.
+                </p>
+
+
+            <h2 class="subject-header" id="special"> My Bot </h2>
+            <p class="paragraph">
+                My bot is a very basic form of AI. In this game, Vindinium it does 3 things, collect mines, go to taverns and attack other enemy
+                bots. For the task "freemines" it runs a for loops that compares the distances of mines
+                to find the closest mine by comparing distances of mines and checking each time the for loop is run. The ability
+                that my bot has is going to a tavern when it goes below 60 health. It
+                decides this by running a for loop and comparing the distances of the taverns and ultimately going to the 
+                closest one. The ablity my bot has is attacking enemy bots. This is done by a for loop again.
+                The for loop decides what the nearest enemy bot is by again running a for loop and comparing all of the distances of the bots each time
+                it runs the for loop. When all of these loops are run they path the bot to the target and console log whatever they're doing.
+                
+                <h2 class="subject-header">
+              My Vindinium Code
+            </h2>
+            <p class="paragraph">
+               <code> <pre>
+var Bot = require('bot');
+var PF = require('pathfinding');
+//var bot = new Bot('tsvhj161', 'training', 'http://vindinium.org');
+//Put your bot's code here and change training to Arena when you want to fight others.
+var bot = new Bot('o0q28wlc', 'arena', 'http://52.53.211.7:9000'); 
+//Put your bot's code here and change training to Arena when you want to fight others. 
+', 'arena', 'PRIVATE_SERVER_HERE'); //Put your bot's code here and change training to Arena 
+when you want to fight others.
+
+var goDir;
+var Promise = require('bluebird');
+Bot.prototype.botBrain = function() {
+    return new Promise(function(resolve, reject) {
+        _this = bot;
+        //////* Write your bot below Here *//////
+        //////* Set `myDir` in the direction you want to go and then bot.goDir is set to myDir at the bottom *////////
+
+        /*                                      *
+         * This Code is global data!            *
+         *                                      */
+        // Set myDir to what you want and it will set bot.goDir to that direction at the end.  Unless it is "none"
+        var myDir;
+        var myPos = [bot.yourBot.pos.x, bot.yourBot.pos.y];
+//This creates an array of all the enemy bots so taht we can identify them as enemies. If you arent that bot, 
+it is pushed into the array, enemy bots.
+        var enemyBots = [];
+        if(bot.yourBot.id != 1) enemyBots.push(bot.bot1);
+        if(bot.yourBot.id != 2) enemyBots.push(bot.bot2);
+        if(bot.yourBot.id != 3) enemyBots.push(bot.bot3);
+        if(bot.yourBot.id != 4) enemyBots.push(bot.bot4);
+// this sets a variable to closestPlayer
+        var closeEnemy=closestPlayer();
+        
+        //This variable checks the position of enemy mines.
+        var enemyMines=[]
+        enemyMines=enemyMines.concat(enemyBots[0].mines);
+        enemyMines=enemyMines.concat(enemyBots[1].mines);
+        enemyMines=enemyMines.concat(enemyBots[2].mines);
+        enemyMines=enemyMines.concat(bot.freeMines);
+        </pre> </code>
+        <p class ="codeDiv">
+            This is the code that set global data. There are mutiple parts that define enemy bots and also the nearest mines. 
+            This data is needed is needed later in this code to be able to address targets to execute upon. The first array is for enemy bots.
+            If you are a certain bot, like bot 1, it will push all other bots 2, 3 and 4, into the enemyBots array and sets them as enemyBots.
+            The next array is for enemy mines. It takes the locations of all mines that aren't yours and pushes them into the array enemyBots
+            which will be used to later take enemy mines later.
+        </p>
+        <code> <pre>
+        /*                                      *
+         * This Code Decides WHAT to do         *
+         *                                      */
+        //this code analyzes the health of your bot and if it is below 60 will execute the task 
+        "taverns which makes it walk to the nearest tavern."
+        
+        var task;
+        if(bot.yourBot.life < 60){
+            task="taverns"
+            
+    // if it is not below 60 health it will attack the closest enemy
+        }else if(bot.findDistance(myPos,[closeEnemy.pos.x,closeEnemy.pos.y])<5&&closeEnemy.pos.x.life<bot.yourBot.life-20){
+            task="hunt"
+        }else{
+    // if you aren't below 60 health and if there aren't any enemy near you, it will go claim mines.
+            task="freemines"
+        }
+</pre> </code>
+<p class="codeDiv">
+This code decides what to do but not how to do it yet. It sets tasks when certain events happen such as when your bot drops below 60 health 
+and. The tasks that are set here in the if else statements are the 3 core functions that this bot performs. Going to taverns, attacking 
+other players and claiming mines.
+</p>
+<code><pre>
+
+        /*                                      *
+         * This Code Determines HOW to do it    *
+         *                                      */
+
+        // This Code find the nearest freemine and sets myDir toward that direction //
+       
+       //if it gets to the task freemines it will find the closest mine which equals free mines.
+        if(task === "freemines") {
+            var closestMine = bot.freeMines[0];
+            for(i = 0; i < bot.freeMines.length; i++) {
+                // it cycles through an array and decides what the closest mine is.
+                if(bot.findDistance(myPos, closestMine) > bot.findDistance(myPos, bot.freeMines[i])) {
+                    closestMine = bot.freeMines[i];
+                }
+            }
+            //when this line of code is complete it will type out Cliaiming a free mine
+            console.log("Claiming a Free Mine!");
+            myDir = bot.findPath(myPos, closestMine);
+           
+            // if the task taverns is selected, it will find the closest tavern by comparing their distances 
+            from eachother like in the free mine code above
+            
+        }else if(task==="taverns"){
+            var closestTavern = bot.taverns[0];
+            for(i = 0; i < bot.taverns.length; i++) {
+                if(bot.findDistance(myPos, closestTavern) > bot.findDistance(myPos, bot.taverns[i])) {
+                    closestTavern = bot.taverns[i];
+                }
+            }
+            myDir=bot.findPath(myPos,closestTavern)
+        
+            //if the task hunt is selected it will find the path to the closest enemy which is decided from the 
+            array in the global data.
+        }else if(task==="hunt"){
+            myDir=bot.findPat(myPos,[closeEnemy.pos.x,closeEnemy.pos.y]);
+        }
+        
+        // this looks at the distances of the different enemy bots and compares the distances between all of them to 
+        decide which one to go to.
+        
+        function closestPlayer(){
+            var closestPlayer = enemyBots[0];
+            for(i = 0; i < enemyBots.length; i++) {
+                if(bot.findDistance(myPos, [closestPlayer.pos.x,closestPlayer.pos.y]) > bot.findDistance(myPos, 
+                [enemyBots[i].pos.x,enemyBots[i].pos.y])) {
+                    closestPlayer = enemyBots[i];
+                }
+            }
+            
+            console.log("Killing a player!");
+            return closestPlayer;
+        }
+      </pre> </code>
+      <p class ="codeDiv">
+This code decides how to perform the tasks above. For the task "freemines" it runs a for loops that compares the distances of mines
+to find the closest mine by comparing distances of mines and checking each time the for loop is run. The next block of code
+decides where the nearest tavern by again running a for loop and comparing the distances of the taverns. The last block of code 
+decides what the nearest enemy bot is by again running a for loop and comparing all of the distances of the bots each time
+it runs the for loop. When all of these loops are run they path the bot to the target and console log whatever they're doing.
+      </p>
+       <code><pre>
+        /*                                                                                                                              *
+         * This Code Sets your direction based on myDir.  If you are trying to go to a place that you can't reach, you move randomly.   *
+         * Otherwise you move in the direction set by your code.  Feel free to change this code if you want.                            */
+        if(myDir === "none") {
+            console.log("Going Random!");
+            var rand = Math.floor(Math.random() * 4);
+            var dirs = ["north", "south", "east", "west"];
+            bot.goDir = dirs[rand];
+        } else {
+            bot.goDir = myDir;
+        }
+
+        
+
+        ///////////* DON'T REMOVE ANTYTHING BELOW THIS LINE *//////////////
+        resolve();
+    });
+}
+bot.runGame();
+  </pre> </code>
+                <p class="codeDiv">
+This is code sets the bot to walk in a random direction if none of the tasks are capable of being executed. It makes the 
+bot walk in a random direction and console logs that it is doing so.
+                </p>
+    <h1 class="subject-header"> What I learned about AI</h1>
+    <p class="paragraph"> 
+    This project was a very enjoyable and educational experience. I learned a lot about basic AI coding and it turned out to be a lot easier 
+    than I had expected AI to be. AI to me has changed from something almost incomprehensible to something that almost makes sense. 
+    I realized that this basic AI is just a bunch of for loops running checks on things. In conclusion, I think that 
+    everyone has something that they can take away from this and that I'm capable of anything if I put my mind to it.
+    </p>
+                </div> 
+                
+        </div>
+
+    </div>
+    <div id="header-border">
+    </div>
+
+</body>
+
+
+</html>      
