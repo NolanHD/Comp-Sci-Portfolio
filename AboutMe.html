@@ -1,276 +1,217 @@
-<!--
-To change this template use Tools | Templates.
--->
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!-- To change this template use Tools | Templates. --> <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> <html> <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'> <head> <meta charset="utf-8"> <!-Hello--> <title>Nolan's Website</title>
+ <style> #title {
+    font-style: heavy;
+    text-align: center;
+    border: 5px solid rgb(255, 165, 0);
+    font-family: 'Raleway', sans-serif;
+}
 
-<head>
-    <meta charset="utf-8">
-    <!-Hello-->
-    <title>Nolan's Website</title>
-    <style>
-        #title {
-            font-style: heavy;
-            text-align:center;
-            border: 5px solid rgb(255, 165, 0);
-            font-family:Century Gothic;
-        }
-        body {
-            color:rgb(255, 255, 255);
-            background: rgb(20, 20, 20);
-        }
-        .navbar {
-            height:40px;
-            background:white;
-            margin-top: 25px;
-            border-bottom:10px solid orange;
-        }
-        #header {
-            width:1000px;
-            height:auto;
-            margin:0 auto;
-        }
-        .navbar ul {
-            margin:0;
-            padding:0;
-            font-family:Century Gothic;
-        }
-        .navbar ul li {
-            list-style:none;
-        }
-        .navbar ul li a {
-            text-decoration:none;
-            float: left;
-            display: block;
-            padding: 10px 20px;
-            color:black;
-        }
-        .navbar ul li a:hover {
-            background-color: grey;
-            color:white;
-        }
-        #loading-gif {
-            margin:auto;
-            float:right;
-            width:25%;
-        }
-        #header-border {
-            width:100%;
-            height:0px;
-            border-bottom: 2px solid orange;
-        }
-        .subject-header {
-            color:orange;
-            text-decoration:underline;
-            text-align:center;
-        }
-        .questions {
-            color:white;
-            text-decoration:underline;
-        }
-        .paragraph {
-            width:70%;
-        }
-        #word-all {
-            font-weight:bold;
-        }
-        #overview-list {
-            font-weight:bold;
-        }
-        .aboutme-headers {
-            font-style:italic;
-            text-decoration:underline;
-        }
-        h3.aboutme-headers {
-            border-top: 3px dashed orange;
-            width:75%
-        }
-        .list-items {
-            list-style: circle;
-        }
-        #backtop {
-            text-align:right;
-            color:white;
-        }
-        .aboutme-pictures {
-            width:150px;
-            float:left;
-            margin-right:30px;
-            border: 2px solid orange
-        }
-        #aboutme-list #sidebar {
-            float:right;
-            text-align:right
-            color:white;
-            background-color:orange;
-            border:3px dotted white;
-            position:fixed;
-            left:1100px;
-            top: 180px
-        }
-    </style>
-</head>
+body {
+    color: rgb(255, 255, 255);
+    background: rgb(20, 20, 20);
+    font-family: 'Raleway', sans-serif;
+}
 
-<body>
-    <div id="header">
-        <h1 id="title"> About Me </h1>
-        <div class="navbar">
-            <ul>
-                <li><a href="index.html ">| Home | </a>
-                </li>
-                <li><a href="AboutMe.html">| About Me |</a>
-                </li>
-                <li><a href="HTML-CSS.html">| HTML/CSS | </a>
-                </li>
-                <li><a href="Computer-Hardware.html">| Computer Hardware | </a> 
-                </li>
-                <li><a href="sportsinfo.html">| Sports Info | </a> 
-                </li>
-                <li><a href="calc.html">| Calculator | </a> 
-                </li>
-                <li><a href="todolist.html">| To Do List | </a> 
-                </li>
-                <li><a href="myCanvas.html">| Pong | </a> 
-                </li>
-                <li><a href="vind.html">| Vindinium | </a> 
-                </li>
-            </ul>
-            <br>
-            <br>
+.navbar {
+    height: 40px;
+    background: white;
+    margin-top: 25px;
+    border-bottom: 10px solid orange;
+}
 
-            <div id="aboutme-list">
+#header {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
 
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: .7em;
+}
 
-                <ul id="sidebar">
-                    <li><a href="#uno">| Who is Nolan? | </a>
-                    </li>
-                    <li><a href="#dos ">| Favorite Books | </a>
-                    </li>
-                    <li><a href="#tres ">| Hobbies | </a>
-                    </li>
-                    <li><a href="#cuatros">| Fun Facts | </a> 
-                    </li>
-                    
+.navbar ul li {
+    list-style: none;
+}
 
-                </ul>
-            </div>
-            <div id="uno">
+.navbar ul li a {
+    text-decoration: none;
+    float: left;
+    display: block;
+    padding: 10px 20px;
+    color: black;
+}
 
+.navbar ul li a:hover {
+    background-color: grey;
+    color: white;
+}
 
-                <h2 class="subject-header uno"> 
-           Who is Nolan?
-            </h2>
-            </div>
+#loading-gif {
+    margin: auto;
+    float: right;
+    width: 25%;
+}
 
+#header-border {
+    width: 100%;
+    height: 0px;
+    border-bottom: 2px solid orange;
+}
 
+.subject-header {
+    color: orange;
+    text-decoration: underline;
+    text-align: center;
+}
 
-            <h3 class="aboutme-headers"> What grade are you in?
-            
-            </h3>
-            <p class="paragraph">
-                I'm in 10th grade
-            </p>
+.questions {
+    color: white;
+    text-decoration: underline;
+}
 
-            <h4 class="aboutme-headers">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What school do you go to?
-            </h4>
+.paragraph {
+    width: 70%;
+}
 
+#word-all {
+    font-weight: bold;
+}
 
-            <img src="https://upload.wikimedia.org/wikipedia/en/5/58/Summit_prep_logo.jpg" class="aboutme-pictures" alt="the logo of the school I go to, Summit Prep">
-            <p class="paragraph ">Summit Preparatory High School. I just moved to this school after a year in Washington!</p>
+#overview-list {
+    font-weight: bold;
+}
 
-            <br>
-            <br>
-            <br>
-            <br>
-            <h3 class="aboutme-headers"> Where have you been in your life? </h3>
+.aboutme-headers {
+    font-style: italic;
+    text-decoration: underline;
+}
 
-            <p class="paragraph">In my life I've been to many places, from the cold climate of Calgary, Alberta, to the warm and humid climate of Orlando, Florida, I've seen it all.</p>
+h3.aboutme-headers {
+    border-top: 3px dashed orange;
+    width: 75%
+}
 
-            <div id="dos">
+.list-items {
+    list-style: circle;
+}
 
-                <h3 class="aboutme-headers"> What are your 2 favorite books? </h3>
-            </div>
-            <p class="paragraph">My two favorite books are "The Boys in the Boat" and "I am the Messenger"</p>
+#backtop {
+    text-align: right;
+    color: white;
+}
 
-            <h4 class="aboutme-headers">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Why do you like them?
-            </h4>
-            <img src="http://t1.gstatic.com/images?q=tbn:ANd9GcQIvgW1JIuYM0wUqnw5UKllfQgHLT6ojrpp3wmtZG2SU9em0Thn" class="aboutme-pictures" alt="Cover of my favorite book">
-            <img src="http://t0.gstatic.com/images?q=tbn:ANd9GcSOzjmNJJqmV3Mov9e8L1d1FBTdulOsOZraFXpdlZu3BI4ApvZ2" class="aboutme-pictures iamthemsg" alt="My 2nd favorite book">
-            <p class="paragraph">Both of these books are both great, but they are great in their own way. The Boys in the Boat is a book perserverance and finding yourself in the face of adversity. The book I am the Messenger is more of a mystery novel but is at the time happy and uplifting.</p>
+.aboutme-pictures {
+    width: 150px;
+    float: left;
+    margin-right: 30px;
+    border: 2px solid orange
+}
 
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+#aboutme-list #sidebar {
+    float: right;
+    text-align: right color: white;
+    background-color: orange;
+    border: 3px dotted white;
+    position: fixed;
+    left: 1100px;
+    top: 180px
+}
 
-            <div id="tres">
-
-                <h3 class="aboutme-headers">
-             What is your favorite hobby?
-            </h3>
-            </div>
-            <img src="http://www.gbsrc.com/picts/PICS/Tennis_Racket_and_Balls.jpg" class="aboutme-pictures" alt="a picture of a tennis racket and a tennis ball">
-            <p class="paragraph">Outside of school, I enjoy playing sports such as cross country and tennis.</p>
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <h4 class="aboutme-headers">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Why do you like it?
-            </h4>
-
-            <p class="paragraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sports give me an opportunity to blow off some extra energy and also to keep me in shape!</p>
-
-            <h4 class="aboutme-headers">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How did you get into it?
-            </h4>
-
-            <p class="paragraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; As a kid I was exposed to sports everyday, my family is very active and I ended watching and playing
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;many sports.
-            </p>
-
-            <h4 class="aboutme-headers">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What is your favorite part?
-            </h4>
-
-            <p class="paragraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; My favorite part is that after a match or run, win or loss, I know that I tried my hardest and that my
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hardwork payed off.
-            </p>
-            <div id="cuatros">
-
-                <h3 class="aboutme-headers">
-              (Fun Fact) What else do you want people to know about you ?
-            </h3>
-            </div>
-            <img src="http://www.hamiltonvetcare.com.au/Portals/Hamiltonvetcare/Easter%20chocolate.jpg" class="aboutme-pictures" alt="a picture showing that I don't like chocolate">
-            <p class="paragraph">I don't like chocolate. It's quite a long story, but to sum it up, when I was young, around 3 or 4, to get all the chocolate that my parents gave us, she lied to me and told me I was "allergic" to chocolate. To this day, I still give her all the chocolate, not because I think that I'm allergic to it, but because after not eating for so long, I simply don't like it!</p>
-
-
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <p id="backtop"><a href="#header"> Back to top </a>
-            </p>
-        </div>
-
-    </div>
-    <div id="header-border">
-    </div>
-
-</body>
-
-
-</html>
+</style> </head> <body> <div id="header"> <h1 id="title"> About Me </h1> <div class="navbar"> <ul> <li><a href="index.html "> Home </a> </li> <li><a href="AboutMe.html"> About Me </a> </li> <li><a href="HTML-CSS.html"> HTML/CSS </a> </li> <li><a href="Computer-Hardware.html"> Computer Hardware </a> </li> <li><a href="sportsinfo.html"> Sports Info </a> </li> <li><a href="calc.html"> Calculator </a> </li> <li><a href="todolist.html"> To Do List </a> </li> <li><a href="myCanvas.html"> Pong </a> </li> <li><a href="vind.html"> Vindinium </a> </li> </ul> <br> <br> <div id="aboutme-list"> <ul id="sidebar"> <li><a href="#uno">| Who is Nolan? | </a> </li> <li><a href="#dos ">| Favorite Books | </a> </li> <li><a href="#tres ">| Hobbies | </a> </li> <li><a href="#cuatros">| Fun Facts | </a> </li> </ul> </div> <div id="uno"> <h2 class="subject-header uno"> Who is Nolan? </h2> </div> <h3 class="aboutme-headers"> What grade are you in? </h3> <p class="paragraph"> I'm in 10th grade
+ </p> <h4 class="aboutme-headers"> &nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+What school do you go to? </h4> <img src="https://upload.wikimedia.org/wikipedia/en/5/58/Summit_prep_logo.jpg" class="aboutme-pictures" alt="the logo of the school I go to, Summit Prep"> <p class="paragraph ">Summit Preparatory High School. I just moved to this school after a year in Washington!</p> <br> <br> <br> <br> <h3 class="aboutme-headers"> Where have you been in your life? </h3> <p class="paragraph">In my life I've been to many places, from the cold climate of Calgary, Alberta, to the warm and humid climate of Orlando, Florida, I've seen it all.</p> <div id="dos"> <h3 class="aboutme-headers"> What are your 2 favorite books? </h3> </div> <p class="paragraph">My two favorite books are "The Boys in the Boat" and "I am the Messenger"</p> <h4 class="aboutme-headers"> &nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+Why do you like them? </h4> <img src="http://t1.gstatic.com/images?q=tbn:ANd9GcQIvgW1JIuYM0wUqnw5UKllfQgHLT6ojrpp3wmtZG2SU9em0Thn" class="aboutme-pictures" alt="Cover of my favorite book"> <img src="http://t0.gstatic.com/images?q=tbn:ANd9GcSOzjmNJJqmV3Mov9e8L1d1FBTdulOsOZraFXpdlZu3BI4ApvZ2" class="aboutme-pictures iamthemsg" alt="My 2nd favorite book"> <p class="paragraph">Both of these books are both great,
+but they are great in their own way. The Boys in the Boat is a book perserverance and finding yourself in the face of adversity. The book I am the Messenger is more of a mystery novel but is at the time happy and uplifting.</p> <br> <br> <br> <br> <br> <br> <br> <div id="tres"> <h3 class="aboutme-headers"> What is your favorite hobby? </h3> </div> <img src="http://www.gbsrc.com/picts/PICS/Tennis_Racket_and_Balls.jpg" class="aboutme-pictures" alt="a picture of a tennis racket and a tennis ball"> <p class="paragraph">Outside of school,
+I enjoy playing sports such as cross country and tennis.</p> <br> <br> <br> <br> <h4 class="aboutme-headers"> &nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+Why do you like it? </h4> <p class="paragraph">&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+Sports give me an opportunity to blow off some extra energy and also to keep me in shape!</p> <h4 class="aboutme-headers"> &nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+How did you get into it? </h4> <p class="paragraph">&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+As a kid I was exposed to sports everyday,
+my family is very active and I ended watching and playing <br>&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+many sports. </p> <h4 class="aboutme-headers"> &nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+What is your favorite part? </h4> <p class="paragraph">&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+My favorite part is that after a match or run,
+win or loss,
+I know that I tried my hardest and that my <br>&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+hardwork payed off. </p> <div id="cuatros"> <h3 class="aboutme-headers"> (Fun Fact) What else do you want people to know about you ? </h3> </div> <img src="http://www.hamiltonvetcare.com.au/Portals/Hamiltonvetcare/Easter%20chocolate.jpg" class="aboutme-pictures" alt="a picture showing that I don't like chocolate"> <p class="paragraph">I don't like chocolate. It's quite a long story,
+but to sum it up,
+when I was young,
+around 3 or 4,
+to get all the chocolate that my parents gave us,
+she lied to me and told me I was "allergic" to chocolate. To this day,
+I still give her all the chocolate,
+not because I think that I'm allergic to it, but because after not eating for so long, I simply don't like it!</p> <br> <br> <br> <br> <br> <br> <br> <br> <p id="backtop"><a href="#header"> Back to top </a> </p> </div> </div> <div id="header-border"> </div> </body> </html>
